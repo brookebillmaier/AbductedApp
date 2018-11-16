@@ -96,5 +96,5 @@ class Alien
           "image" => result["image"],
       }
     end
-    
+
 end
