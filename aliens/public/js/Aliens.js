@@ -63,6 +63,22 @@ class Aliens extends React.Component {
     })
     .catch(error => console.log(error))
     }
+
+  getAlien(alien) {
+    this.setState({alien: alien})
+  }
+
+    getAliens () {
+      fetch('/aliens')
+        .then(response => response.json())
+        .then(data => {
+          this.setState({
+            aliens: data
+          })
+        }).catch(error => console.log(error))
+    }
+
+
   toggleState (st1, st2) {
     this.setState({
       [st1]: !this.state[st1],
