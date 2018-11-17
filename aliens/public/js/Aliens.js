@@ -19,6 +19,7 @@ class Aliens extends React.Component {
     this.getAlien = this.getAlien.bind(this)
     this.toggleState = this.toggleState.bind(this)
     this.handleUpdateSubmit = this.handleUpdateSubmit.bind(this)
+
   }
 
 
@@ -53,17 +54,17 @@ class Aliens extends React.Component {
       headers: {
         'Accept': 'application/json, text/plain, */*',
         'Content-Type': 'application/json'
-    }
-  })
-    .then(createdAlien => {
-      return createdAlien.json()
+      }
     })
-    .then(jsonedAlien => {
-      this.handleCreate(jsonedAlien)
-      this.toggleState('addAlienIsVisible', 'aliensListIsVisible')
-    })
-    .catch(error => console.log(error))
-  }
+      .then(createdAlien => {
+        return createdAlien.json()
+      })
+      .then(jsonedAlien => {
+        this.handleCreate(jsonedAlien)
+        this.toggleState('addAlienIsVisible', 'alienListIsVisible')
+      })
+      .catch(error => console.log(error))
+}
 
 
   getAlien(alien) {
