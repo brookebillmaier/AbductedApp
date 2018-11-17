@@ -1,15 +1,19 @@
+
+
+
 class Aliens extends React.Component {
   constructor (props){
     super(props)
 
     //set up states
     this.state = {
-      aliensListIsVisible: true,
+      aliensListIsVisible: false,
       addAlienIsVisible: false,
       alienIsVisible: false,
       editAlienIsVisible: false,
       aliens: [],
-      alien: {}
+      alien: {},
+      isHidden: true
     }
 
     // binds
@@ -20,8 +24,8 @@ class Aliens extends React.Component {
     this.toggleState = this.toggleState.bind(this)
     this.handleUpdateSubmit = this.handleUpdateSubmit.bind(this)
 
-  }
 
+  }
 
   componentDidMount () {
     this.getAliens()
@@ -112,33 +116,61 @@ class Aliens extends React.Component {
       .catch(error => console.log(error))
   }
 
+
+
+
+
+
   render () {
   return (
     <div className='aliens'>
+
+
+      {this.state.isHidden ?
+        <div>
+
+        <img src='https://pbs.twimg.com/media/CrCKqU6XgAAPbuS.jpg' />
+        <button onClick={()=> this.toggleState('aliensListIsVisible', 'isHidden')}>Take A number</button>
+        </div>
+        :
+        ''
+       }
+
+
       <h2>Aliens</h2>
       <button className='button is-success' onClick={()=> this.toggleState('addAlienIsVisible')}>Add an Alien</button>
 
       {this.state.aliensListIsVisible ?
+
+
         <AliensList
         toggleState={this.toggleState}
         aliens={this.state.aliens}
 
         getAlien={this.getAlien}
         deleteAlien={this.deleteAlien}
-        /> : '' }
+        />
+
+        : '' }
+
+
       {this.state.addAlienIsVisible ?
         <AlienForm
         toggleState={this.toggleState}
         handleCreate={this.handleCreate}
         handleSubmit={this.handleCreateSubmit}
-        /> : '' }
+        />
+         : '' }
       {this.state.alienIsVisible ?
         <Alien
         toggleState={this.toggleState}
         alien = {this.state.alien}
         handleSubmit={this.handleUpdateSubmit}
-        /> : ''}
+        />
+        : ''}
     </div>
+
+
   )
 }
 
