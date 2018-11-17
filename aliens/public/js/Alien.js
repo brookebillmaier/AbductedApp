@@ -1,5 +1,4 @@
 class Alien extends React.Component {
-
   render () {
     return (
       <div>
@@ -20,7 +19,6 @@ class Alien extends React.Component {
           </div>
           </div>
           <AlienForm alien={this.props.alien}   handleSubmit={this.props.handleSubmit}/>
-        </div>
         </div>
       )
   }

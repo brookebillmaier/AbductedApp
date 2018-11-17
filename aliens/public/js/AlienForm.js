@@ -51,7 +51,7 @@ class AlienForm extends React.Component {
           <div className='control'>
             <input
               className='input'
-              type='number'
+              type='date'
               onChange={this.handleChange}
               value={this.state.birthday}
               id='birthday'
