@@ -21,6 +21,7 @@ class Alien extends React.Component {
           </div>
           <AlienForm alien={this.props.alien}   {/*handleSubmit={this.props.handleSubmit}*/}/>
         </div>
+        </div>
       )
   }
 }

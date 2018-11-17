@@ -27,14 +27,14 @@ class Aliens extends React.Component {
   }
 
   deleteAlien (alien, index) {
-    fetch('aliens/' + alien.id,
+    fetch('/aliens/' + alien.id,
     {
       method: 'DELETE'
     })
     .then(data => {
       this.setState({
         aliens: [
-          ...this.state.aliens.slic(0, index),
+          ...this.state.aliens.slice(0, index),
           ...this.state.aliens.slice(index + 1)
         ]
       })
