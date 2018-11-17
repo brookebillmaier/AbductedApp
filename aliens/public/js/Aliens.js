@@ -47,7 +47,7 @@ class Aliens extends React.Component {
   }
 
   handleCreateSubmit (alien) {
-    fetch('/aliens', {
+    fetch('/aliens/', {
       body: JSON.stringify(alien),
       method: 'POST',
       headers: {
@@ -71,7 +71,7 @@ class Aliens extends React.Component {
   }
 
   getAliens () {
-    fetch('/aliens')
+    fetch('/aliens/')
       .then(response => response.json())
       .then(data => {
         this.setState({

@@ -29,10 +29,12 @@ class AlienForm extends React.Component {
     this.setState({[event.target.id]: event.target.value})
 
   }
+  
   handleSubmit (event) {
     event.preventDefault()
     this.props.handleSubmit(this.state)
   }
+
   render () {
     return (
       <div >
