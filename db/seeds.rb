@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+aliens = Alien.create([{name:'Dilbert', birthday:'12/1/1900', species:'Martian', planet:'Mars', image:'https://www.colourbox.de/preview/8565283-.jpg'}])
