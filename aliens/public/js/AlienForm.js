@@ -19,7 +19,7 @@ class AlienForm extends React.Component {
         species: this.props.alien.species,
         planet: this.props.alien.planet,
         image: this.props.alien.image,
-        // id: this.props.alien.id
+        id: this.props.alien.id
         // do we need an ID? for the event.target.id below?
       })
     }
@@ -90,7 +90,7 @@ class AlienForm extends React.Component {
             <input type='submit' value='Submit' />
           </div>
         </form>
-          <button {/*className="button is-link" onClick={()=> this.props.toggleState('peopleListIsVisible', 'addPersonIsVisible')}*/}>Cancel</button>
+          <button onClick={()=> this.props.toggleState('alienListIsVisible', 'addAlienIsVisible')}>Cancel</button>
       </div>
     )
   }
