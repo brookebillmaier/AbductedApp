@@ -11,6 +11,14 @@ class AlienForm extends React.Component {
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
+  handleChange (event) {
+    this.setState({[event.target.id]: event.target.value})
+
+  }
+  handleSubmit (event) {
+    event.preventDefault()
+    this.props.handleSubmit(this.state)
+  }
   componentDidMount(){
     if(this.props.alien){
       this.setState({
@@ -29,10 +37,13 @@ class AlienForm extends React.Component {
     this.setState({[event.target.id]: event.target.value})
 
   }
+
   handleSubmit (event) {
     event.preventDefault()
     this.props.handleSubmit(this.state)
   }
+
+
   render () {
     return (
       <div >
@@ -51,7 +62,7 @@ class AlienForm extends React.Component {
           <div className='control'>
             <input
               className='input'
-              type='date'
+              type='text'
               onChange={this.handleChange}
               value={this.state.birthday}
               id='birthday'
@@ -70,7 +81,7 @@ class AlienForm extends React.Component {
           <div className='control'>
             <input
               className='input'
-              type='tel'
+              type='text'
               id='planet'
               onChange={this.handleChange}
               value={this.state.planet}
@@ -90,7 +101,7 @@ class AlienForm extends React.Component {
             <input type='submit' value='Submit' />
           </div>
         </form>
-          <button onClick={()=> this.props.toggleState('alienListIsVisible', 'addAlienIsVisible')}>Cancel</button>
+          <button onClick={()=> this.props.toggleState('aliensListIsVisible', 'addAlienIsVisible')}>Cancel</button>
       </div>
     )
   }
