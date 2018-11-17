@@ -42,6 +42,7 @@ class Aliens extends React.Component {
   }
 
   handleCreate (alien) {
+    console.log([alien, ...this.state.alien])
     this.setState({aliens: {alien, ...this.state.aliens}})
   }
 
@@ -52,8 +53,8 @@ class Aliens extends React.Component {
       headers: {
         'Accept': 'application/json, text/plain, */*',
         'Content-Type': 'application/json'
-      }
-    })
+    }
+  })
     .then(createdAlien => {
       return createdAlien.json()
     })
@@ -62,7 +63,8 @@ class Aliens extends React.Component {
       this.toggleState('addAlienIsVisible', 'aliensListIsVisible')
     })
     .catch(error => console.log(error))
-    }
+  }
+
 
   getAlien(alien) {
     this.setState({alien: alien})
@@ -99,7 +101,6 @@ class Aliens extends React.Component {
         return updatedAlien.json()
       })
       .then(jsonedAlien => {
-        //need to update state be naughty, call that db!
         this.getAliens()
         this.toggleState('aliensListIsVisible', 'alienIsVisible')
       })
