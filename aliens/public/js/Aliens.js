@@ -43,8 +43,9 @@ class Aliens extends React.Component {
   }
 
   handleCreate (alien) {
-    console.log([alien, ...this.state.alien])
-    this.setState({aliens: {alien, ...this.state.aliens}})
+      const updatedAliens = this.state.aliens
+      updatedAliens.unshift(alien)
+      this.setState({aliens: updatedAliens})
   }
 
   handleCreateSubmit (alien) {
@@ -72,13 +73,16 @@ class Aliens extends React.Component {
   }
 
   getAliens () {
-    fetch('/aliens/')
-      .then(response => response.json())
-      .then(data => {
-        this.setState({
-          aliens: data
+    fetch('/aliens')
+      .then((response) => {
+        response.json().then((data) => {
+          this.setState({
+            aliens: data
+          })
+
         })
-      }).catch(error => console.log(error))
+      })
+      .catch(error => console.log(error))
   }
 
 
@@ -118,6 +122,7 @@ class Aliens extends React.Component {
         <AliensList
         toggleState={this.toggleState}
         aliens={this.state.aliens}
+
         getAlien={this.getAlien}
         deleteAlien={this.deleteAlien}
         /> : '' }

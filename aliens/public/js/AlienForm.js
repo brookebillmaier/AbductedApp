@@ -33,19 +33,17 @@ class AlienForm extends React.Component {
     }
   }
 
-<<<<<<< HEAD
   handleChange (event) {
     this.setState({[event.target.id]: event.target.value})
 
   }
-  
+
   handleSubmit (event) {
     event.preventDefault()
     this.props.handleSubmit(this.state)
   }
 
-=======
->>>>>>> cbcaef1a3afbb4d0deef88f5424dd8749ae8c13f
+
   render () {
     return (
       <div >

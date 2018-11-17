@@ -23,15 +23,15 @@ class Alien
     #get all aliens
     def self.all
       results = DB.exec("SELECT * FROM aliens;")
-      console.log(results)
+
       return results.map do |result|
         {
-          "id" => result.["id"].to_i,
-          "name"=> result.["name"],
-          "birthday" => result.["birthday"],
-          "species" => result.["species"],
-          "planet" => result.["planet"],
-          "image" => result.["image"],
+          "id" => result["id"].to_i,
+          "name"=> result["name"],
+          "birthday" => result["birthday"],
+          "species" => result["species"],
+          "planet" => result["planet"],
+          "image" => result["image"],
         }
       end
     end
@@ -60,12 +60,12 @@ class Alien
           SQL
       )
       return {
-          "id" => result["id"].to_i,
-          "name"=> result["name"],
-          "birthday" => result["birthday"],
-          "species" => result["species"],
-          "planet" => result["planet"],
-          "image" => result["image"],
+          "id" => results.first["id"].to_i,
+          "name"=> results.first["name"],
+          "birthday" => results.first["birthday"],
+          "species" => results.first["species"],
+          "planet" => results.first["planet"],
+          "image" => results.first["image"],
       }
     end
 
