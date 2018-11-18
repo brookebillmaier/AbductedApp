@@ -13,7 +13,7 @@ class Aliens extends React.Component {
       editAlienIsVisible: false,
       aliens: [],
       alien: {},
-      isHidden: true
+      monsterIncLadyIsVisible: true
     }
 
     // binds
@@ -111,8 +111,9 @@ class Aliens extends React.Component {
         return updatedAlien.json()
       })
       .then(jsonedAlien => {
-        this.getAliens()
+
         this.toggleState('aliensListIsVisible', 'alienIsVisible')
+        
       })
       .catch(error => console.log(error))
   }
@@ -127,14 +128,17 @@ class Aliens extends React.Component {
     <div className='aliens'>
 
 
-
+ {this.state.monsterIncLadyIsVisible ?
         <div class='monsterIncLady'>
 
         <img class='MIPIC' src='https://pbs.twimg.com/media/CrCKqU6XgAAPbuS.jpg' />
         <br/>
-        <button onClick={()=> this.toggleState('aliensListIsVisible', 'isHidden')}>Take A number</button>
+        <button onClick={()=> this.toggleState('aliensListIsVisible', 'monsterIncLadyIsVisible')}>Take A number</button>
         </div>
 
+        :
+        ''
+      }
 
         {this.state.aliensListIsVisible ?
         <div>
