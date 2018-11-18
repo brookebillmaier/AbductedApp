@@ -20,40 +20,9 @@ class Alien
       @image = opts["image"]
     end
 
-
-  DB.prepare("create_alien",
-    <<-SQL
-        INSERT INTO aliens (name, birthday, species, planet, image)
-        VALUES ( $1, $2, $3, $4, $5)
-        RETURNING id, name, birthday, species, planet, image;
-    SQL
-  )
-
-  DB.prepare("delete_alien",
-  "DELETE FROM aliens WHERE id=$1 RETURNING id;"
-  )
-
-  DB.prepare("find_alien",
-    <<-SQL
-        SELECT *
-        FROM aliens
-        WHERE aliens.id=$1;
-    SQL
-  )
-
-  DB.prepare("update_alien",
-    <<-SQL
-        UPDATE aliens
-        SET name=$2, birthday=$3, species=$4, planet=$5, image=$6
-        WHERE id=$1
-        RETURNING id, name, birthday, species, planet, image;
-    SQL
-  )
-
     #get all aliens
     def self.all
       results = DB.exec("SELECT * FROM aliens;")
-
       return results.map do |result|
         {
           "id" => result["id"].to_i,
@@ -90,12 +59,12 @@ class Alien
           SQL
       )
       return {
-          "id" => results.first["id"].to_i,
-          "name"=> results.first["name"],
-          "birthday" => results.first["birthday"],
-          "species" => results.first["species"],
-          "planet" => results.first["planet"],
-          "image" => results.first["image"],
+          "id" => result["id"].to_i,
+          "name"=> result["name"],
+          "birthday" => result["birthday"],
+          "species" => result["species"],
+          "planet" => result["planet"],
+          "image" => result["image"],
       }
     end
 

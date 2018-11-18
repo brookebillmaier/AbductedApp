@@ -35,3 +35,19 @@ span {
   height:400px;
   width:600px;
 }
+
+// Navbar
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+.nav {
+  background-color: #04395E;
+  height: 100px;
+  width: 100vw;
+  margin-left: 0;
+  font-family: 'Space Mono', monospace;
+  color: white;
+  font-size: 2.5vw;
+  padding-left: 10px; }
+
+ .section {
+  left: 0;
+  position: absolute; }

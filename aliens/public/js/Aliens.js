@@ -1,19 +1,15 @@
-
-
-
 class Aliens extends React.Component {
   constructor (props){
     super(props)
 
     //set up states
     this.state = {
-      aliensListIsVisible: false,
+      aliensListIsVisible: true,
       addAlienIsVisible: false,
       alienIsVisible: false,
       editAlienIsVisible: false,
       aliens: [],
-      alien: {},
-      isHidden: true
+      alien: {}
     }
 
     // binds
@@ -23,9 +19,8 @@ class Aliens extends React.Component {
     this.getAlien = this.getAlien.bind(this)
     this.toggleState = this.toggleState.bind(this)
     this.handleUpdateSubmit = this.handleUpdateSubmit.bind(this)
-
-
   }
+
 
   componentDidMount () {
     this.getAliens()
@@ -47,29 +42,28 @@ class Aliens extends React.Component {
   }
 
   handleCreate (alien) {
-      const updatedAliens = this.state.aliens
-      updatedAliens.unshift(alien)
-      this.setState({aliens: updatedAliens})
+    console.log([alien, ...this.state.alien])
+    this.setState({aliens: {alien, ...this.state.aliens}})
   }
 
   handleCreateSubmit (alien) {
-    fetch('/aliens/', {
+    fetch('/aliens', {
       body: JSON.stringify(alien),
       method: 'POST',
       headers: {
         'Accept': 'application/json, text/plain, */*',
         'Content-Type': 'application/json'
-      }
+    }
+  })
+    .then(createdAlien => {
+      return createdAlien.json()
     })
-      .then(createdAlien => {
-        return createdAlien.json()
-      })
-      .then(jsonedAlien => {
-        this.handleCreate(jsonedAlien)
-        this.toggleState('addAlienIsVisible', 'alienListIsVisible')
-      })
-      .catch(error => console.log(error))
-}
+    .then(jsonedAlien => {
+      this.handleCreate(jsonedAlien)
+      this.toggleState('addAlienIsVisible', 'aliensListIsVisible')
+    })
+    .catch(error => console.log(error))
+  }
 
 
   getAlien(alien) {
@@ -78,15 +72,12 @@ class Aliens extends React.Component {
 
   getAliens () {
     fetch('/aliens')
-      .then((response) => {
-        response.json().then((data) => {
-          this.setState({
-            aliens: data
-          })
-
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          aliens: data
         })
-      })
-      .catch(error => console.log(error))
+      }).catch(error => console.log(error))
   }
 
 
@@ -95,7 +86,6 @@ class Aliens extends React.Component {
       [st1]: !this.state[st1],
       [st2]: !this.state[st2]
     })
-    this.getAliens()
   }
 
   handleUpdateSubmit (alien) {
@@ -117,65 +107,32 @@ class Aliens extends React.Component {
       .catch(error => console.log(error))
   }
 
-
-
-
-
-
   render () {
   return (
     <div className='aliens'>
-
-
-
-        <div class='monsterIncLady'>
-
-        <img class='MIPIC' src='https://pbs.twimg.com/media/CrCKqU6XgAAPbuS.jpg' />
-        <br/>
-        <button onClick={()=> this.toggleState('aliensListIsVisible', 'isHidden')}>Take A number</button>
-        </div>
-
-
-        {this.state.aliensListIsVisible ?
-        <div>
-        <h2>Aliens</h2>
-        <button className='button is-success' onClick={()=> this.toggleState('addAlienIsVisible')}>Add an Alien</button>
-        </div>
-        :
-        ''
-        }
-
+      <h2>Aliens</h2>
+      <button className='button is-success' onClick={()=> this.toggleState('addAlienIsVisible')}>Add an Alien</button>
 
       {this.state.aliensListIsVisible ?
-
         <AliensList
         toggleState={this.toggleState}
         aliens={this.state.aliens}
-
         getAlien={this.getAlien}
         deleteAlien={this.deleteAlien}
-        />
-
-        : '' }
-
-
+        /> : '' }
       {this.state.addAlienIsVisible ?
         <AlienForm
         toggleState={this.toggleState}
         handleCreate={this.handleCreate}
         handleSubmit={this.handleCreateSubmit}
-        />
-         : '' }
+        /> : '' }
       {this.state.alienIsVisible ?
         <Alien
         toggleState={this.toggleState}
         alien = {this.state.alien}
         handleSubmit={this.handleUpdateSubmit}
-        />
-        : ''}
+        /> : ''}
     </div>
-
-
   )
 }
 
