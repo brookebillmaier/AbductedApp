@@ -95,6 +95,7 @@ class Aliens extends React.Component {
       [st1]: !this.state[st1],
       [st2]: !this.state[st2]
     })
+    this.getAliens()
   }
 
   handleUpdateSubmit (alien) {

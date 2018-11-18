@@ -12,10 +12,13 @@ class Alien extends React.Component {
               <h4><span>Name:</span> {this.props.alien.name} </h4>
               <h4><span>Birthday:</span> {this.props.alien.birthday} </h4>
               <h4><span>Planet:</span> {this.props.alien.planet} </h4>
+              <h4><span>Species:</span> {this.props.alien.species} </h4>
             </div>
 
           <div>
-            <button  onClick={()=> this.props.toggleState('alienListIsVisible', 'alienIsVisible')}>See All Aliens</button>
+            <button  onClick={()=> this.props.toggleState('alienListIsVisible', 'alienIsVisible')
+
+          }>See All Aliens</button>
           </div>
           </div>
           </div>
