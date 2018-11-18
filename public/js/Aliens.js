@@ -95,6 +95,7 @@ class Aliens extends React.Component {
       [st1]: !this.state[st1],
       [st2]: !this.state[st2]
     })
+    this.getAliens()
   }
 
   handleUpdateSubmit (alien) {
@@ -126,22 +127,26 @@ class Aliens extends React.Component {
     <div className='aliens'>
 
 
-      {this.state.isHidden ?
-        <div>
 
-        <img src='https://pbs.twimg.com/media/CrCKqU6XgAAPbuS.jpg' />
+        <div class='monsterIncLady'>
+
+        <img class='MIPIC' src='https://pbs.twimg.com/media/CrCKqU6XgAAPbuS.jpg' />
+        <br/>
         <button onClick={()=> this.toggleState('aliensListIsVisible', 'isHidden')}>Take A number</button>
+        </div>
+
+
+        {this.state.aliensListIsVisible ?
+        <div>
+        <h2>Aliens</h2>
+        <button className='button is-success' onClick={()=> this.toggleState('addAlienIsVisible')}>Add an Alien</button>
         </div>
         :
         ''
-       }
+        }
 
-
-      <h2>Aliens</h2>
-      <button className='button is-success' onClick={()=> this.toggleState('addAlienIsVisible')}>Add an Alien</button>
 
       {this.state.aliensListIsVisible ?
-
 
         <AliensList
         toggleState={this.toggleState}
