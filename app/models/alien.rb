@@ -24,7 +24,7 @@ class Alien
   DB.prepare("create_alien",
     <<-SQL
         INSERT INTO aliens (name, birthday, species, planet, image)
-        VALUES ( $1, $2, $3, $4, $5, $6 )
+        VALUES ( $1, $2, $3, $4, $5)
         RETURNING id, name, birthday, species, planet, image;
     SQL
   )
