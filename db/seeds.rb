@@ -9,7 +9,7 @@
 # aliens = Alien.create([{name:'Dilbert', birthday:'12/1/1900', species:'Martian', planet:'Mars', image:'https://www.colourbox.de/preview/8565283-.jpg'}])
 
 
-CREATE TABLE aliens (id SERIAL, name VARCHAR(200), birthday VARCHAR(200), species VARCHAR(150), planet VARCHAR(100), image VARCHAR(100));
+# CREATE TABLE aliens (id SERIAL, name VARCHAR(200), birthday VARCHAR(200), species VARCHAR(150), planet VARCHAR(100), image VARCHAR(100));
 
 
 #variables
