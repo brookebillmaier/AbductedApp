@@ -1,5 +1,7 @@
 {
   "name": "aliens",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "react-awesome-modal": "^2.0.5"
+  }
 }
