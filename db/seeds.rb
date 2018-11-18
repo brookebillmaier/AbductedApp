@@ -22,10 +22,10 @@ image = ["https://robohash.org/97.87.2sdf8/?set=set2", "https://robohash.org/rao
 10.times do
   image = image.sample
   Alien.create({
-    'name' => Faker::FunnyName.name_with_initial,
-    'birthday' => Faker::Date.birthday(200, 2000),
-    'species' => Faker::HitchhikersGuideToTheGalaxy.specie,
-    'planet' => Faker::HitchhikersGuideToTheGalaxy.planet,
+    'name' => "#{Faker::FunnyName.name_with_initial}",
+    'birthday' => "#{Faker::Date.birthday(200, 2000)}",
+    'species' => "#{Faker::HitchhikersGuideToTheGalaxy.specie}",
+    'planet' => "#{Faker::HitchhikersGuideToTheGalaxy.planet}",
     'image' => image
     })
 end
