@@ -16,8 +16,6 @@ image = ["https://robohash.org/97.87.2sdf8/?set=set2", "https://robohash.org/rao
 #aliens
 
 10.times do
-
-  species = species.sample
   image = image.sample
   Alien.create({
     'name' => Faker::FunnyName.name_with_initial,
