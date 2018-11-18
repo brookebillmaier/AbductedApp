@@ -16,7 +16,7 @@ class Alien extends React.Component {
             </div>
 
           <div>
-            <button  onClick={()=> this.props.toggleState('alienListIsVisible', 'alienIsVisible')
+            <button  onClick={()=> this.props.toggleState('alienIsVisible', 'aliensListIsVisible')
 
           }>See All Aliens</button>
           </div>
