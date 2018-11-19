@@ -48,14 +48,18 @@ body {
 .tagsForList {
  display: flex;
  flex-direction: row;
- justify-content: space-between; background-color: #04395E;}
+ justify-content: space-between; background-color: #04395E;
+ margin-top:40px;
+}
 
 .header {
+  margin-top: 30px;
   color: white;
   text-align: center;
 }
 
 .addalienbutton {
+  margin-top:15px;
   color: #04395E;
   background-color: white;
   border: 2px solid #04395E;
@@ -154,10 +158,10 @@ text-align: center;
 
 .field {
   background-color: darkGrey;
-  position: absolute;
+  position:absolute;
   left: 32vw;
   text-align: center;
-  padding: 10px;
+  padding: 20px 30px;
   border-radius: 10px;
 }
 
