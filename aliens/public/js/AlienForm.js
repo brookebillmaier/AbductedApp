@@ -46,9 +46,9 @@ class AlienForm extends React.Component {
 
   render () {
     return (
-      <div >
+      <div className ='field'>
         <form onSubmit={this.handleSubmit}>
-          <label className='label' for='name'>Name</label>
+          <label className='label'  for='name' value ='name'>Name</label>
           <div className='control'>
             <input
               className='input'

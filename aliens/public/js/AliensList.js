@@ -1,22 +1,28 @@
 class AliensList extends React.Component {
   render (){
     return (
-      <table>
+      <table className='AliensList'>
         <tbody>
         {this.props.aliens.map((alien, index) => {
           return (
-            <tr>
+
+            <tr >
               <td onClick={()=> { this.props.getAlien(alien); this.props.toggleState('aliensListIsVisible', 'alienIsVisible')}}>
-                <img src={alien.avatar} alt={alien.name} />
+                <img src={alien.image} alt={alien.name} className='avatar' />
               </td>
-              <td className='alien' onClick={()=> { this.props.getAlien(alien); this.props.toggleState('aliensListIsVisible', 'alienIsVisible')}}>
+
+              <td>
                 <h3> {alien.name} </h3>
               </td>
+
               <td>
-                  <button className='edit'>Edit</button>
+              <h3>
+                {alien.planet}
+              </h3>
               </td>
+
               <td>
-                  <button className='delete' onClick={() => this.props.deleteAlien(alien, index)}>Delete</button>
+                  <button className='delete' onClick={() => this.props.deleteAlien(alien, index)}>Remove</button>
               </td>
             </tr>
           )
