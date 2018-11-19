@@ -142,9 +142,8 @@ class Aliens extends React.Component {
 
         {this.state.aliensListIsVisible ?
         <div>
-        <h1 className='header'>Alien Department of Spaceships Queue</h1><center>
-        <button className='addalienbutton' onClick={()=> this.toggleState('addAlienIsVisible')}>Add an Alien</button></center>
-        <h1 className='nameTag'>Name</h1><h1 className='planetTag'>Planet</h1>
+        <h2 class='alienAndButton'>Aliens</h2>
+        <button className='alienAndButton' onClick={()=> this.toggleState('addAlienIsVisible')}>Add an Alien</button>
         </div>
         :
         ''
