@@ -109,6 +109,9 @@ table {
   border-radius: 2px;
   margin: 20px; }
 
+.avatar:hover {
+  transform: scale(1.2); }
+
 .h1 {
   font-family: 'Space Mono', monospace;
   color: blue;
