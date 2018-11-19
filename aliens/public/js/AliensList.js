@@ -5,11 +5,11 @@ class AliensList extends React.Component {
         <tbody>
         {this.props.aliens.map((alien, index) => {
           return (
-            <tr>
-              <td onClick={()=> { this.props.getAlien(alien); this.props.toggleState('aliensListIsVisible', 'alienIsVisible')}}>
+            <tr onClick={()=> { this.props.getAlien(alien); this.props.toggleState('aliensListIsVisible', 'alienIsVisible')}}>
+              <td>
                 <img src={alien.avatar} alt={alien.name} />
               </td>
-              <td className='alien' onClick={()=> { this.props.getAlien(alien); this.props.toggleState('aliensListIsVisible', 'alienIsVisible')}}>
+              <td>
                 <h3> {alien.name} </h3>
               </td>
               <td>
