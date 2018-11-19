@@ -1,26 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
 @import url("https://fonts.googleapis.com/css?family=Space+Mono");
 .nav {
   background-color: #04395E;
-  height: 10vw;
+  height: 9vw;
   width: 100vw;
-  margin-left: 0;
-  font-family: 'Space Mono', monospace;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  font-size: 2.5vw;
-  padding-left: 30px; }
+  font-family: 'Space Mono', monospace; }
 
-.icon {
-  background-image: url("/images/logo.png"); }
+.logo {
+  height: 8vw;
+  padding-left: 1vw; }
+
+.numberButton {
+  color: white;
+  background-color: Transparent;
+  border: 3px solid white;
+  position: absolute;
+  top: 7vw;
+  left: 20vw;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  width: 23vw;
+  height: 5vw;
+  font-size: 2.5vw;
+  letter-spacing: 3px; }
+
+.numberButton:hover {
+  border: 3px solid white;
+  color: white;
+  background-color: #04395Ecc; }
 
 .section {
-  left: 20;
-  padding-left: 30px;
-  position: absolute; }
+  position: absolute;
+  left: 0px; }
 
 .avatar {
   width: 100px; }
+
+.h1 {
+  font-family: 'Space Mono', monospace;
+  color: blue;
+  size: 400px; }
+
+.field {
+  position: absolute;
+  left: 15vw; }
 
 .footer {
   width: 100vw;
@@ -48,11 +71,13 @@ span {
   margin-top: 50px; }
 
 .monsterIncLady {
-  display: inline-block; }
+  display: inline-block;
+  position: absolute; }
 
 .MIPIC {
   margin-bottom: 10px;
-  height: 400px;
-  width: 600px; }
+  height: 30vw;
+  align-self: center;
+  margin-left: 15vw; }
 
 /*# sourceMappingURL=main.css.map */

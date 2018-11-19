@@ -131,10 +131,9 @@ class Aliens extends React.Component {
 
  {this.state.monsterIncLadyIsVisible ?
         <div class='monsterIncLady'>
-
-        <img class='MIPIC' src='https://pbs.twimg.com/media/CrCKqU6XgAAPbuS.jpg' />
+        <img class='MIPIC' src='header.png'/>
         <br/>
-        <button onClick={()=> this.toggleState('aliensListIsVisible', 'monsterIncLadyIsVisible')}>Take A number</button>
+        <button class ='numberButton' onClick={()=> this.toggleState('aliensListIsVisible', 'monsterIncLadyIsVisible')}>Take A number</button>
         </div>
 
         :
