@@ -153,8 +153,12 @@ text-align: center;
 }
 
 .field {
+  background-color: darkGrey;
   position: absolute;
-  left: 15vw;
+  left: 32vw;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 //footer
@@ -223,6 +227,10 @@ footer {
 .cardInfo {
   margin-top: 50px;
 
+}
+
+label {
+  font-size: 20px;
 }
 
 
