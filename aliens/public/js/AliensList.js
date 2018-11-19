@@ -19,8 +19,6 @@ class AliensList extends React.Component {
                   <button className='delete' onClick={() => this.props.deleteAlien(alien, index)}>Delete</button>
               </td>
               </tr>
-              </td>
-            </tr>
           )
         })}
         </tbody>
