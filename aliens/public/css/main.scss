@@ -16,7 +16,7 @@ body {
   background-color: white;
   border-radius: 10px;
   padding: 10px;
-  margin-top: 8vw;
+  margin-top: 1vw;
 }
 // alien list table header
 .nameTag {
@@ -25,7 +25,9 @@ body {
   letter-spacing: .5vw;
   position: absolute;
   left: 35vw;
-  font-size: 20px; }
+  font-size: 20px;
+
+}
 
 .planetTag {
   color: white;
@@ -42,10 +44,17 @@ body {
  position: absolute;
  left: 12.5vw;
  font-size: 20px; }
+
 .tagsForList {
  display: flex;
  flex-direction: row;
- justify-content: space-between; }
+ justify-content: space-between;
+ background-color: #04395E;
+ height: 4vw;
+ width: 80vw;
+ margin-left: 10vw;
+ border-radius: 3px;
+}
 
 .header {
   color: white;
@@ -58,6 +67,7 @@ body {
   border: 2px solid #04395E;
   text-transform: uppercase;
   font-size: 2vw;
+  margin-bottom: 10px;
 }
 .addalienbutton:hover {
   color: white;
@@ -77,6 +87,16 @@ body {
   color: #04395E;
   width: 10vw;
 }
+
+.delete:hover {
+  background-color: #40395E;
+  border: 2px solid white;
+  color: white;
+}
+
+
+
+
 
 //nav logo
 .logo {
@@ -98,8 +118,8 @@ text-align: center;
   background-color: Transparent;
   border: 3px solid white;
   position: absolute;
-  top: 15vw;
-  left: 18vw;
+  top: 8vw;
+  left: 17vw;
   text-transform: uppercase;
   font-family: 'Anton', sans-serif;
   width: 23vw;
@@ -133,15 +153,15 @@ text-align: center;
   transform: scale(1.2); }
 
 //form show
-.h1 {
-  font-family: 'Space Mono', monospace;
-  color: blue;
-  size: 400px;
-}
+
 
 .field {
+  background-color: darkGrey;
   position: absolute;
-  left: 15vw;
+  left: 32vw;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 //footer
@@ -152,8 +172,8 @@ text-align: center;
 }
 
 .license {
-  width: 450px;
-  height:230px;
+  width: 550px;
+  height:330px;
   background-color: lightGrey;
   display:flex;
   flex-direction: row;
@@ -161,16 +181,69 @@ text-align: center;
   border-radius: 15px;
   border: 1px solid black;
   margin: 100px auto;
+  padding: 3vw;
+}
+
+.banner {
+  background-color: #1A4B6C;
+  text-align: center;
+  padding-left: 25px;
+  font-family: cursive;
+  font-size: 30px;
+  color: white;
+  display:flex;
+  flex-direction: row;
+  top: 240px;
+  position: absolute;
+  height: 50px;
+  width: 550px;
+
+}
+span {
+  font-weight: bold;
+  margin-left: 15px;
+  font-variant-caps: all-petite-caps;
+  font-size: 40px;
+
+
+}
+
+//buttons on alien show page
+
+.alienbuttons {
+  margin-left: 30px;
+  background-color:  #1A4B6C;
+  color: white;
+  border: 2px solid white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+
+
+}
+
+.alienbuttons:hover {
+  background-color: white;
+  color: #1A4B6C;
+  border: 2px solid #1A4B6C;
+}
+
+
+
+
+.cardInfo h4{
+  margin-left:20px;
 }
 
 .alienPic {
-  margin-top: 15px;
+  margin-top: 40px;
   height:200px;
   width:200px;
 }
 
 span {
   font-size: 18px;
+  padding-left: 10px;
 }
 
 footer {
@@ -181,6 +254,10 @@ footer {
 .cardInfo {
   margin-top: 50px;
 
+}
+
+label {
+  font-size: 20px;
 }
 
 
@@ -195,5 +272,5 @@ footer {
   height: 30vw;
   align-self: center;
   margin-left: 15vw;
-  margin-top:50px;
+  margin-top:1vw;
 }
