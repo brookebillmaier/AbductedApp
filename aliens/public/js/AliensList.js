@@ -13,13 +13,14 @@ class AliensList extends React.Component {
                 <h3> {alien.name} </h3>
               </td>
               <td>
-                  <button className='delete' onClick={() => this.props.deleteAlien(alien, index)}>Delete</button>
-              </td>
-              <td>
               <h3>
                 {alien.planet}
               </h3>
               </td>
+              <td>
+                  <button className='delete' onClick={() => this.props.deleteAlien(alien, index)}>Delete</button>
+              </td>
+
               </tr>
 
           )

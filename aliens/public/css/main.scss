@@ -8,21 +8,31 @@
   font-family: 'Space Mono', monospace;
 }
 
+body {
+  background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/0kjHIH6/a-view-of-outer-space-flying-between-the-stars_bdt1pvas_thumbnail-full01.png');
+}
+
 //nav logo
 .logo {
   height: 8vw;
   padding-left: 1vw;
 }
 
+table {
+  margin: 25px auto;
+}
 
+.alienAndButton {
+text-align: center;
+}
 //take a number button
 .numberButton {
   color: white;
   background-color: Transparent;
   border: 3px solid white;
   position: absolute;
-  top: 7vw;
-  left: 20vw;
+  top: 15vw;
+  left: 18vw;
   text-transform: uppercase;
   font-family: 'Anton', sans-serif;
   width: 23vw;
@@ -77,6 +87,7 @@
   justify-content: space-around;
   border-radius: 15px;
   border: 1px solid black;
+  margin: 100px auto;
 }
 
 .alienPic {
@@ -89,7 +100,10 @@ span {
   font-size: 18px;
 }
 
-
+footer {
+  background-color: #04395E;
+  color:ghostWhite;
+}
 
 .cardInfo {
   margin-top: 50px;
@@ -108,5 +122,5 @@ span {
   height: 30vw;
   align-self: center;
   margin-left: 15vw;
-
+  margin-top:50px;
 }
