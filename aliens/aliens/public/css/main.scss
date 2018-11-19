@@ -1,20 +1,24 @@
-@import url("https://fonts.googleapis.com/css?family=Anton");
-@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+//navbar
 .nav {
   background-color: #04395E;
   height: 9vw;
   width: 100vw;
-  font-family: 'Space Mono', monospace; }
+  font-family: 'Space Mono', monospace;
+}
 
 body {
-  background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/0kjHIH6/a-view-of-outer-space-flying-between-the-stars_bdt1pvas_thumbnail-full01.png"); }
+  background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/0kjHIH6/a-view-of-outer-space-flying-between-the-stars_bdt1pvas_thumbnail-full01.png');
+}
 
 .AliensList {
   background-color: white;
   border-radius: 10px;
   padding: 10px;
-  margin-top: 8vw; }
-
+  margin-top: 8vw;
+}
+// alien list table header
 .nameTag {
   color: white;
   text-transform: uppercase;
@@ -29,38 +33,41 @@ body {
   letter-spacing: .5vw;
   position: absolute;
   left: 60vw;
-  font-size: 20px; }
+ font-size: 20px; }
 
 .avatarTag {
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: .5vw;
-  position: absolute;
-  left: 12.5vw;
-  font-size: 20px; }
-
+ color: white;
+ text-transform: uppercase;
+ letter-spacing: .5vw;
+ position: absolute;
+ left: 12.5vw;
+ font-size: 20px; }
 .tagsForList {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #04395E; }
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between; }
 
 .header {
   color: white;
-  text-align: center; }
+  text-align: center;
+}
 
 .addalienbutton {
   color: #04395E;
   background-color: white;
   border: 2px solid #04395E;
   text-transform: uppercase;
-  font-size: 2vw; }
-
+  font-size: 2vw;
+}
 .addalienbutton:hover {
   color: white;
   background-color: #04395E;
-  border: 2px solid white; }
+  border: 2px solid white;
+}
 
+
+
+//delete button
 .delete {
   font-size: 1.5vw;
   letter-spacing: 2px;
@@ -68,24 +75,24 @@ body {
   font-family: 'Anton', sans-serif;
   border: 2px solid #04395E;
   color: #04395E;
-  width: 10vw; }
+  width: 10vw;
+}
 
-.delete:hover {
-  background-color: #40395E;
-  border: 2px solid white;
-  color: white; }
-
+//nav logo
 .logo {
   height: 8vw;
-  padding-left: 1vw; }
+  padding-left: 1vw;
+}
 
 table {
   margin: 10vw;
-  width: 80%; }
+  width: 80%;
+}
 
 .alienAndButton {
-  text-align: center; }
-
+text-align: center;
+}
+//take a number button
 .numberButton {
   color: white;
   background-color: Transparent;
@@ -98,96 +105,95 @@ table {
   width: 23vw;
   height: 5vw;
   font-size: 2.5vw;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+}
 
 .numberButton:hover {
   border: 3px solid white;
   color: white;
-  background-color: #04395Ecc; }
+  background-color: #04395Ecc;
+}
+
 
 .section {
   position: absolute;
-  left: 0px; }
+  left: 0px;
+}
 
+
+//list show
 .avatar {
   width: 100px;
   border: 1px solid black;
   border-radius: 2px;
-  margin: 20px; }
+  margin: 20px;
+}
 
 .avatar:hover {
   transform: scale(1.2); }
 
+//form show
 .h1 {
   font-family: 'Space Mono', monospace;
   color: blue;
-  size: 400px; }
+  size: 400px;
+}
 
 .field {
   position: absolute;
-  left: 15vw; }
+  left: 15vw;
+}
+
+//footer
 
 .footer {
   width: 100vw;
-  height: 10vw; }
+  height: 10vw;
+}
 
 .license {
-  width: 550px;
-  height: 330px;
+  width: 450px;
+  height:230px;
   background-color: lightGrey;
-  display: flex;
+  display:flex;
   flex-direction: row;
   justify-content: space-around;
   border-radius: 15px;
   border: 1px solid black;
   margin: 100px auto;
-  padding: 3vw; }
-
-.banner {
-  background-color: #1A4B6C;
-  text-align: center;
-  padding-left: 25px;
-  font-family: cursive;
-  font-size: 30px;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  top: 240px;
-  position: absolute;
-  height: 50px;
-  width: 550px; }
-
-span {
-  font-weight: bold;
-  margin-left: 15px;
-  font-variant-caps: all-petite-caps;
-  font-size: 40px; }
+}
 
 .alienPic {
-  margin-top: 40px;
-  margin-left: 5px;
-  height: 200px;
-  width: 200px; }
+  margin-top: 15px;
+  height:200px;
+  width:200px;
+}
 
 span {
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 footer {
   background-color: #04395E;
-  color: ghostWhite; }
+  color:ghostWhite;
+}
 
 .cardInfo {
-  margin-top: 50px; }
+  margin-top: 50px;
+
+}
+
 
 .monsterIncLady {
   display: inline-block;
-  position: absolute; }
+  position: absolute;
+}
+
 
 .MIPIC {
-  margin-bottom: 10px;
+  margin-bottom:10px;
   height: 30vw;
   align-self: center;
   margin-left: 15vw;
-  margin-top: 50px; }
-
-/*# sourceMappingURL=main.css.map */
+  margin-top:50px;
+}

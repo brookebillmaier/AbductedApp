@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Anton");
 @import url("https://fonts.googleapis.com/css?family=Space+Mono");
 .nav {
@@ -42,8 +43,7 @@ body {
 .tagsForList {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background-color: #04395E; }
+  justify-content: space-between; }
 
 .header {
   color: white;
@@ -69,11 +69,6 @@ body {
   border: 2px solid #04395E;
   color: #04395E;
   width: 10vw; }
-
-.delete:hover {
-  background-color: #40395E;
-  border: 2px solid white;
-  color: white; }
 
 .logo {
   height: 8vw;
@@ -131,55 +126,43 @@ table {
   width: 100vw;
   height: 10vw; }
 
+=======
+>>>>>>> parent of caad5cc... fixing merge conflicts
 .license {
-  width: 550px;
-  height: 330px;
+  width: 450px;
+  height: 230px;
   background-color: lightGrey;
   display: flex;
   flex-direction: row;
+<<<<<<< HEAD
   justify-content: space-around;
   border-radius: 15px;
   border: 1px solid black;
-  margin: 100px auto;
-  padding: 3vw; }
-
-.banner {
-  background-color: #1A4B6C;
-  text-align: center;
-  padding-left: 25px;
-  font-family: cursive;
-  font-size: 30px;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  top: 240px;
-  position: absolute;
-  height: 50px;
-  width: 550px; }
-
-span {
-  font-weight: bold;
-  margin-left: 15px;
-  font-variant-caps: all-petite-caps;
-  font-size: 40px; }
+  margin: 100px auto; }
+=======
+  justify-content: space-around; }
+>>>>>>> parent of caad5cc... fixing merge conflicts
 
 .alienPic {
-  margin-top: 40px;
-  margin-left: 5px;
+  margin-top: 15px;
   height: 200px;
   width: 200px; }
 
 span {
   font-size: 18px; }
 
+<<<<<<< HEAD
 footer {
   background-color: #04395E;
   color: ghostWhite; }
 
+=======
+>>>>>>> parent of caad5cc... fixing merge conflicts
 .cardInfo {
   margin-top: 50px; }
 
 .monsterIncLady {
+<<<<<<< HEAD
   display: inline-block;
   position: absolute; }
 
@@ -189,5 +172,13 @@ footer {
   align-self: center;
   margin-left: 15vw;
   margin-top: 50px; }
+=======
+  display: inline-block; }
+
+.MIPIC {
+  margin-bottom: 10px;
+  height: 400px;
+  width: 600px; }
+>>>>>>> parent of caad5cc... fixing merge conflicts
 
 /*# sourceMappingURL=main.css.map */
