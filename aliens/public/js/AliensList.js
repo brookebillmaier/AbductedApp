@@ -8,9 +8,6 @@ class AliensList extends React.Component {
             <tr>
               <td onClick={()=> { this.props.getAlien(alien); this.props.toggleState('aliensListIsVisible', 'alienIsVisible')}}>
                 <img src={alien.image} alt={alien.name} className='avatar' />
-                </td>
-              <td>
-                <img src={alien.image} alt={alien.name} className="avatar" />
               </td>
               <td>
                 <h3> {alien.name} </h3>
