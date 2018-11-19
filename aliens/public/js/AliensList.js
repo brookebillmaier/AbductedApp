@@ -10,17 +10,18 @@ class AliensList extends React.Component {
                 <img src={alien.image} alt={alien.name} className='avatar' />
                 </td>
               <td>
-                <img src={alien.image} alt={alien.name} className="avatar" />
-              </td>
-              <td>
                 <h3> {alien.name} </h3>
               </td>
               <td>
                   <button className='delete' onClick={() => this.props.deleteAlien(alien, index)}>Delete</button>
               </td>
-              </tr>
+              <td>
+              <h3>
+                {alien.planet}
+              </h3>
               </td>
-            </tr>
+              </tr>
+
           )
         })}
         </tbody>
