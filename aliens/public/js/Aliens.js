@@ -90,10 +90,11 @@ class Aliens extends React.Component {
   }
 
 
-  toggleState (st1, st2) {
+  toggleState (st1, st2, st3) {
     this.setState({
       [st1]: !this.state[st1],
-      [st2]: !this.state[st2]
+      [st2]: !this.state[st2],
+      [st3]: !this.state[st3]
     })
     this.getAliens()
   }
@@ -113,7 +114,7 @@ class Aliens extends React.Component {
       .then(jsonedAlien => {
 
         this.toggleState('aliensListIsVisible', 'alienIsVisible')
-        
+
       })
       .catch(error => console.log(error))
   }
