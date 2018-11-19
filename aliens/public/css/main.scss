@@ -17,7 +17,6 @@ body {
   border-radius: 10px;
   padding: 10px;
   margin-top: 8vw;
-
 }
 // alien list table header
 .nameTag {
@@ -26,33 +25,27 @@ body {
   letter-spacing: .5vw;
   position: absolute;
   left: 35vw;
-  font-size: 20px;
-}
+  font-size: 20px; }
+
 .planetTag {
   color: white;
   text-transform: uppercase;
   letter-spacing: .5vw;
   position: absolute;
   left: 60vw;
-  font-size: 20px;
-}
+ font-size: 20px; }
+
 .avatarTag {
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: .5vw;
-  position: absolute;
-  left: 12.5vw;
-  font-size: 20px;
-}
-
+ color: white;
+ text-transform: uppercase;
+ letter-spacing: .5vw;
+ position: absolute;
+ left: 12.5vw;
+ font-size: 20px; }
 .tagsForList {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
-
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between; }
 
 .header {
   color: white;
@@ -137,10 +130,7 @@ text-align: center;
 }
 
 .avatar:hover {
-  transform: scale(1.2);
-}
-
-
+  transform: scale(1.2); }
 
 //form show
 .h1 {
