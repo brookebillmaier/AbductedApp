@@ -2,10 +2,13 @@ class App extends React.Component {
   render () {
     return (
       <div className='section'>
-      <div className='nav'>Alien Department <br/>of Spaceships</div>
+      <div className='nav'><div className="icon"></div></div>
       <h1 className='title'></h1>
       <div className='columns'>
         <Aliens />
+        </div>
+        <div className='footer'>
+
         </div>
       </div>
     )

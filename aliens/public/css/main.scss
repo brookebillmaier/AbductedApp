@@ -2,20 +2,39 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 .nav {
   background-color: #04395E;
-  height: 100px;
+  height: 10vw;
   width: 100vw;
   margin-left: 0;
   font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
   color: white;
   font-size: 2.5vw;
-  padding-left: 10px;
+  padding-left: 30px;
+}
+
+.icon {
+  background-image: url('/images/logo.png');
 }
 
 .section {
-  left: 0;
+  left: 20;
+  padding-left: 30px;
   position: absolute;
 }
 
+
+//list show
+.avatar {
+  width: 100px;
+}
+
+//footer
+
+.footer {
+  width: 100vw;
+  height: 10vw;
+}
 
 
 .license {
