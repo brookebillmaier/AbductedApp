@@ -17,6 +17,7 @@ body {
   border-radius: 10px;
   padding: 10px;
   margin-top: 8vw;
+
 }
 // alien list table header
 .nameTag {
@@ -24,15 +25,33 @@ body {
   text-transform: uppercase;
   letter-spacing: .5vw;
   position: absolute;
-  left: 27vw;
+  left: 35vw;
+  font-size: 20px;
 }
 .planetTag {
   color: white;
   text-transform: uppercase;
   letter-spacing: .5vw;
   position: absolute;
-  left: 50vw;
+  left: 60vw;
+  font-size: 20px;
 }
+.avatarTag {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .5vw;
+  position: absolute;
+  left: 12.5vw;
+  font-size: 20px;
+}
+
+.tagsForList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
 
 
 .header {
