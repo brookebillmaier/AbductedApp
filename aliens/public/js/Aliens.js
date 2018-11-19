@@ -142,8 +142,8 @@ class Aliens extends React.Component {
 
         {this.state.aliensListIsVisible ?
         <div>
-        <h2>Aliens</h2>
-        <button className='button is-success' onClick={()=> this.toggleState('addAlienIsVisible')}>Add an Alien</button>
+        <h2 class='alienAndButton'>Aliens</h2>
+        <button className='alienAndButton' onClick={()=> this.toggleState('addAlienIsVisible')}>Add an Alien</button>
         </div>
         :
         ''
