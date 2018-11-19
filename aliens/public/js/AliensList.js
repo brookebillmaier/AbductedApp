@@ -5,7 +5,7 @@ class AliensList extends React.Component {
         <tbody>
         {this.props.aliens.map((alien, index) => {
           return (
-            <tr>
+            <tr >
               <td onClick={()=> { this.props.getAlien(alien); this.props.toggleState('aliensListIsVisible', 'alienIsVisible')}}>
                 <img src={alien.image} alt={alien.name} className='avatar' />
                 </td>
