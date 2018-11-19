@@ -20,14 +20,29 @@ body {
   text-transform: uppercase;
   letter-spacing: .5vw;
   position: absolute;
-  left: 27vw; }
+  left: 35vw;
+  font-size: 20px; }
 
 .planetTag {
   color: white;
   text-transform: uppercase;
   letter-spacing: .5vw;
   position: absolute;
-  left: 50vw; }
+  left: 60vw;
+  font-size: 20px; }
+
+.avatarTag {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .5vw;
+  position: absolute;
+  left: 12.5vw;
+  font-size: 20px; }
+
+.tagsForList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 .header {
   color: white;
@@ -93,6 +108,9 @@ table {
   border: 1px solid black;
   border-radius: 2px;
   margin: 20px; }
+
+.avatar:hover {
+  transform: scale(1.2); }
 
 .h1 {
   font-family: 'Space Mono', monospace;
