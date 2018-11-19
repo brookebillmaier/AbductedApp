@@ -42,7 +42,8 @@ body {
 .tagsForList {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: #04395E; }
 
 .header {
   color: white;

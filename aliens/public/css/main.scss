@@ -25,7 +25,9 @@ body {
   letter-spacing: .5vw;
   position: absolute;
   left: 35vw;
-  font-size: 20px; }
+  font-size: 20px;
+
+}
 
 .planetTag {
   color: white;
@@ -42,10 +44,11 @@ body {
  position: absolute;
  left: 12.5vw;
  font-size: 20px; }
+
 .tagsForList {
  display: flex;
  flex-direction: row;
- justify-content: space-between; }
+ justify-content: space-between; background-color: #04395E;}
 
 .header {
   color: white;
