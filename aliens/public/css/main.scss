@@ -1,3 +1,4 @@
+
 //Navbar
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 .nav {
@@ -36,7 +37,6 @@
   height: 10vw;
 }
 
-
 .license {
   width: 450px;
   height:230px;
@@ -44,6 +44,8 @@
   display:flex;
   flex-direction: row;
   justify-content: space-around;
+  border-radius: 15px;
+  border: 1px solid black;
 }
 
 .alienPic {

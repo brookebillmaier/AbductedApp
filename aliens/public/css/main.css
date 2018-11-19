@@ -9,7 +9,6 @@
   text-transform: uppercase;
   color: white;
   font-size: 2.5vw;
-  border-bottom: solid 5px white;
   padding-left: 30px; }
 
 .icon {
@@ -17,8 +16,7 @@
 
 .section {
   left: 20;
-  background-color: #032A45;
-  border: 2px solid white;
+  padding-left: 30px;
   position: absolute; }
 
 .avatar {
@@ -34,7 +32,9 @@
   background-color: lightGrey;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  border-radius: 15px;
+  border: 1px solid black; }
 
 .alienPic {
   margin-top: 15px;
