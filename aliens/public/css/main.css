@@ -13,7 +13,7 @@ body {
   background-color: white;
   border-radius: 10px;
   padding: 10px;
-  margin-top: 8vw; }
+  margin-top: 1vw; }
 
 .nameTag {
   color: white;
@@ -44,7 +44,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   background-color: #04395E;
-  margin-top: 40px; }
+  height: 4vw;
+  width: 80vw;
+  margin-left: 10vw;
+  border-radius: 3px; }
 
 .header {
   margin-top: 30px;
@@ -57,7 +60,8 @@ body {
   background-color: white;
   border: 2px solid #04395E;
   text-transform: uppercase;
-  font-size: 2vw; }
+  font-size: 2vw;
+  margin-bottom: 10px; }
 
 .addalienbutton:hover {
   color: white;
@@ -121,11 +125,6 @@ table {
 .avatar:hover {
   transform: scale(1.2); }
 
-.h1 {
-  font-family: 'Space Mono', monospace;
-  color: blue;
-  size: 400px; }
-
 .field {
   background-color: darkGrey;
   position: absolute;
@@ -170,14 +169,31 @@ span {
   font-variant-caps: all-petite-caps;
   font-size: 40px; }
 
+.alienbuttons {
+  margin-left: 30px;
+  background-color: #1A4B6C;
+  color: white;
+  border: 2px solid white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px; }
+
+.alienbuttons:hover {
+  background-color: white;
+  color: #1A4B6C;
+  border: 2px solid #1A4B6C; }
+
+.cardInfo h4 {
+  margin-left: 20px; }
+
 .alienPic {
   margin-top: 40px;
-  margin-left: 5px;
   height: 200px;
   width: 200px; }
 
 span {
-  font-size: 18px; }
+  font-size: 18px;
+  padding-left: 10px; }
 
 footer {
   background-color: #04395E;
