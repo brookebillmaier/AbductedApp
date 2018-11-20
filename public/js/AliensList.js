@@ -1,5 +1,6 @@
 class AliensList extends React.Component {
   render (){
+    console.log("alien list rendered")
     return (
       <table className='AliensList'>
         <tbody>
