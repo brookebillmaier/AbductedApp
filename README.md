@@ -1,24 +1,20 @@
-# README
+# Alien Department of Spaceships
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://aliends.herokuapp.com/
 
-Things you may want to cover:
+## Made By:
+* Michael Merlo
+* Brooke Billmaier
 
-* Ruby version
+## Technologies Used:
+* Ruby on Rails
+* PostgreSQL
+* React
+* SASS
 
-* System dependencies
+## Approach Taken:
+Welcome to the Alien Department of Spaceships, or ADS. With ADS, users (Alien friends) can clearly view a queue of those in front of them in line at the ADS, a technology that Earthlings to not yet have. The main focus of this app is to have working create, view, update and delete capabilities. This is a full-stack Rails application with Postgres as the database and React as the front end.
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Future Optimizations:
+In the future we would like to have login capabilities and only allow the signed in user to remove themselves from the queue. We would also like to implement an alert system that notifies the user when their turn is next. 
