@@ -1,5 +1,4 @@
 
-
 class Aliens extends React.Component {
   constructor (props){
     super(props)
@@ -13,6 +12,7 @@ class Aliens extends React.Component {
       aliens: [],
       alien: {},
       monsterIncLadyIsVisible: true
+
     }
 
     // binds
@@ -65,9 +65,7 @@ class Aliens extends React.Component {
       })
       .then(jsonedAlien => {
         this.handleCreate(jsonedAlien)
-        console.log(this.state)
-        this.toggleState('addAlienIsVisible', 'aliensListIsVisible')
-        console.log(this.state)
+        this.toggleState('addAlienIsVisible', 'alienListIsVisible')
       })
       .catch(error => console.log(error))
 }
@@ -118,6 +116,7 @@ class Aliens extends React.Component {
 
       })
       .catch(error => console.log(error))
+      this.getAliens()
   }
 
 
@@ -126,10 +125,9 @@ class Aliens extends React.Component {
 
 
   render () {
-    console.log(this.state.aliensListIsVisible)
-    
   return (
     <div className='aliens'>
+
 
 
  {this.state.monsterIncLadyIsVisible ?
@@ -146,10 +144,24 @@ class Aliens extends React.Component {
         {this.state.aliensListIsVisible ?
         <div>
         <h1 className='header'>Alien Department of Spaceships Queue</h1><center>
-        <button className='addalienbutton' onClick={()=> this.toggleState('addAlienIsVisible')}>Join Waitlist</button></center>
+        <button className='addalienbutton' onClick={()=> this.toggleState('addAlienIsVisible')}>Add an Alien</button></center>
         <div class='tagsForList'>
         <h1 className='avatarTag'>Avatar</h1><h1 className='nameTag'>Name</h1><h1 className='planetTag'>Planet</h1>
         </div>
+
+
+        <div class='monsterIncLady'>
+
+        <img class='MIPIC' src='https://pbs.twimg.com/media/CrCKqU6XgAAPbuS.jpg' />
+        <br/>
+        <button onClick={()=> this.toggleState('aliensListIsVisible', 'isHidden')}>Take A number</button>
+        </div>
+
+
+        {this.state.aliensListIsVisible ?
+        <div>
+        <h2>Aliens</h2>
+        <button className='button is-success' onClick={()=> this.toggleState('addAlienIsVisible')}>Add an Alien</button>
         </div>
         :
         ''
@@ -174,6 +186,7 @@ class Aliens extends React.Component {
         toggleState={this.toggleState}
         handleCreate={this.handleCreate}
         handleSubmit={this.handleCreateSubmit}
+          alien = {this.state.alien}
         />
          : '' }
       {this.state.alienIsVisible ?
