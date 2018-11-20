@@ -6,9 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-<<<<<<< HEAD
-aliens = Alien.create([{name:'Dilbert', birthday:'12/1/1900', species:'Martian', planet:'Mars', image:'https://www.colourbox.de/preview/8565283-.jpg'}])
-=======
+
 # aliens = Alien.create([{name:'Dilbert', birthday:'12/1/1900', species:'Martian', planet:'Mars', image:'https://www.colourbox.de/preview/8565283-.jpg'}])
 
 
@@ -33,4 +31,3 @@ images=["http://4.bp.blogspot.com/-A4OLnxTKPu0/VSyDf4r3RiI/AAAAAAAGOSM/SjxCfklOV
     })
 end
 p "database seeded"
->>>>>>> 760c5761bd738dae24c1beecfee14c8a0b7a35d9
