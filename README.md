@@ -1,16 +1,24 @@
-## Alien Department of Spaceships
+# README
 
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-https://aliends.herokuapp.com/ 
+Things you may want to cover:
 
+* Ruby version
 
+* System dependencies
 
+* Configuration
 
+* Database creation
 
+* Database initialization
 
-## Approach Taken 
-## Technologies Used
+* How to run the test suite
 
-## Unsolved problems
+* Services (job queues, cache servers, search engines, etc.)
 
-## Future Optimizations
+* Deployment instructions
+
+* ...
