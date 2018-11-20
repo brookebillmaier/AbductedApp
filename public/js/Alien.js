@@ -19,11 +19,11 @@ class Alien extends React.Component {
             <button class = 'alienbuttons' onClick={()=> this.props.toggleState('alienIsVisible', 'aliensListIsVisible')
 
           }>See All Aliens</button>
-          <button class = 'alienbuttons' onClick={()=> this.props.toggleState('addAlienIsVisible', 'alienIsVisible')
+          <button class = 'alienbuttons'  onClick={()=> this.props.toggleState('addAlienIsVisible', 'alienIsVisible')
 
-        }>Edit</button>
-          </div>
-          </div>
+            }>Edit</button>
+              </div>
+            </div>
           </div>
           {this.addAlienIsVisible ?
           <AlienForm alien={this.props.alien}   handleSubmit={this.props.handleSubmit}/>

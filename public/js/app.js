@@ -8,8 +8,9 @@ class App extends React.Component {
       <div className='columns'>
         <Aliens />
         </div>
-        <div className='footer'>
 
+        <div className='footer'><a href ="/"><img src = 'logo.png' className='logofooter'/></a>
+          <h3 className='footertext'>Created at <a href = "https://generalassemb.ly">GA</a> by <a href ="https://github.com/merlz6">Michael Merlo</a> and <a href = "https://github.com/brookebillmaier">Brooke Billmaier</a></h3>
         </div>
       </div>
     )

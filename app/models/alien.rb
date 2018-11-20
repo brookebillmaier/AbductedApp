@@ -110,7 +110,8 @@ class Alien
       results = DB.exec(
         <<-SQL
           UPDATE aliens
-          SET name='#{opts["name"]}', birthday='#{opts["birthday"]}',
+          SET name='#{opts["name"]}',
+          birthday='#{opts["birthday"]}',
           species='#{opts["species"]}',
           planet='#{opts["planet"]}',
           image='#{opts["image"]}'

@@ -173,7 +173,7 @@ text-align: center;
 
 .license {
   width: 550px;
-  height:330px;
+  height:250px;
   background-color: lightGrey;
   display:flex;
   flex-direction: row;
@@ -196,7 +196,7 @@ text-align: center;
   top: 240px;
   position: absolute;
   height: 50px;
-  width: 550px;
+  width: 605px;
 
 }
 span {
@@ -274,3 +274,42 @@ label {
   margin-left: 15vw;
   margin-top:1vw;
 }
+
+.AlienForm {
+  display: flex;
+  display: columns;
+
+}
+
+
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #04395E;
+  color: white;
+  height: 30px;
+}
+
+.footertext {
+  text-align: right;
+  margin-top: 0;
+  padding-top: 2px;
+  padding-right: 40px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+.logofooter {
+  height: 30px;
+  position: absolute;
+  left: -105px;
+
+
+ }
